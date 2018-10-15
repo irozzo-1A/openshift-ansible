@@ -3,6 +3,7 @@ openshift_master_loopback_config: "{{ openshift_master_config_dir }}/openshift-m
 loopback_context_string: "current-context: {{ openshift.master.loopback_context_name }}"
 openshift_master_session_secrets_file: "{{ openshift_master_config_dir }}/session-secrets.yaml"
 openshift_master_policy: "{{ openshift_master_config_dir }}/policy.json"
+openshift_encryption_config_file: "{{ openshift_master_config_dir }}/encryption-config.yaml"
 
 scheduler_config:
   kind: Policy
